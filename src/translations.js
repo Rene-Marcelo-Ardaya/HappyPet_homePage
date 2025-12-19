@@ -112,6 +112,11 @@ export const translations = {
         statPatients: "Registered pets",
         statUptime: "Uptime",
         statSupport: "Support available",
+        // Dashboard Preview
+        dashboardReservations: "12 Reservations",
+        dashboardActiveToday: "active for today",
+        dashboardSynced: "Synced",
+        dashboardSyncedTime: "2 min ago",
         // Sidebar
         needHelp: "Need help?",
         contactUsText: "Chat with us on WhatsApp",
@@ -122,7 +127,7 @@ export const translations = {
     es: {
         title: "El Sistema Operativo Moderno para",
         vets: "Veterinarias y Spas",
-        subtitle: "Gestiona citas, expedientes y ventas en una plataforma segura en la nube diseñada para mascotas y veterinarios más felices.",
+        subtitle: "Gestiona fichas, historial y ventas en una plataforma segura en la nube, diseñada para mascotas y veterinarios más felices.",
         liveDemo: "Demo en Vivo",
         contactSales: "Contactar Ventas",
         trustedBy: "Con la confianza de 500+ negocios",
@@ -232,6 +237,11 @@ export const translations = {
         statPatients: "Mascotas registradas",
         statUptime: "Tiempo activo",
         statSupport: "Soporte disponible",
+        // Dashboard Preview
+        dashboardReservations: "12 Reservas",
+        dashboardActiveToday: "activas para hoy",
+        dashboardSynced: "Sincronizado",
+        dashboardSyncedTime: "hace 2 min",
         // Sidebar
         needHelp: "¿Necesitas ayuda?",
         contactUsText: "Escríbenos por WhatsApp",
@@ -352,6 +362,11 @@ export const translations = {
         statPatients: "Pets registrados",
         statUptime: "Tempo ativo",
         statSupport: "Suporte disponível",
+        // Dashboard Preview
+        dashboardReservations: "12 Reservas",
+        dashboardActiveToday: "ativas hoje",
+        dashboardSynced: "Sincronizado",
+        dashboardSyncedTime: "há 2 min",
         // Sidebar
         needHelp: "Precisa de ajuda?",
         contactUsText: "Fale conosco pelo WhatsApp",

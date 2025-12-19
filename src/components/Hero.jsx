@@ -119,8 +119,8 @@ const Hero = () => {
                                         <span className="material-symbols-outlined text-violet-600">calendar_month</span>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-semibold text-slate-700 dark:text-white">45 Reservas</p>
-                                        <p className="text-[10px] text-slate-400">activas para hoy</p>
+                                        <p className="text-xs font-semibold text-slate-700 dark:text-white">{t('dashboardReservations')}</p>
+                                        <p className="text-[10px] text-slate-400">{t('dashboardActiveToday')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -131,8 +131,8 @@ const Hero = () => {
                                         <span className="material-symbols-outlined text-sky-600">cloud_sync</span>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-semibold text-slate-700 dark:text-white">Sincronizado</p>
-                                        <p className="text-[10px] text-slate-400">hace 2 min</p>
+                                        <p className="text-xs font-semibold text-slate-700 dark:text-white">{t('dashboardSynced')}</p>
+                                        <p className="text-[10px] text-slate-400">{t('dashboardSyncedTime')}</p>
                                     </div>
                                 </div>
                             </div>

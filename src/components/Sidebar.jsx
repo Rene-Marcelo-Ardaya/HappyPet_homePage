@@ -17,12 +17,6 @@ const Sidebar = ({ isOpen, onClose }) => {
             label: t('navPricing'),
             href: '#pricing',
             external: false
-        },
-        {
-            icon: 'help',
-            label: t('navFAQ') || 'FAQ',
-            href: '#faq',
-            external: false
         }
     ];
 
