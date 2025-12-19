@@ -99,7 +99,7 @@ const Hero = () => {
                                         <img
                                             src="/src/img/Image.jpeg"
                                             alt="HappyPet Dashboard"
-                                            className="w-full h-auto min-h-[300px] object-cover"
+                                            className="w-full h-auto"
                                         />
 
                                         {/* Gradient overlay for smooth blend */}

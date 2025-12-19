@@ -6,18 +6,15 @@ import ValueProposition from './components/ValueProposition';
 import FeatureCarousel from './components/FeatureCarousel';
 import Pricing from './components/Pricing';
 import FloatingActionButton from './components/FloatingActionButton';
-import Sidebar from './components/Sidebar';
 import ChatWidget from './components/ChatWidget';
 
 function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <LanguageProvider>
       <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root">
-        <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
-        <Header onMenuClick={() => setIsSidebarOpen(true)} />
+        <Header />
         <main className="flex-grow">
           <Hero />
           <ValueProposition />

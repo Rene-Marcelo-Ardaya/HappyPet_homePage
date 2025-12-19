@@ -65,7 +65,7 @@ const ValueProposition = () => {
     ];
 
     return (
-        <section className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900">
+        <section id="modules" className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-16">
