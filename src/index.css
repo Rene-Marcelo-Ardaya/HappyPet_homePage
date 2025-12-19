@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #13a4ec;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101c22;
+  --font-display: Manrope, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply min-h-[100dvh] bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-50 antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom scrollbar hiding for the carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
