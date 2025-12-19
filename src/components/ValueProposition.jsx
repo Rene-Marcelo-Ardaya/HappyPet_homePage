@@ -34,8 +34,8 @@ const ValueProposition = () => {
         },
         {
             icon: 'point_of_sale',
-            title: t('moduleCashRegister') || 'Caja y Facturación',
-            description: t('moduleCashRegisterDesc') || 'Control de ventas, facturación electrónica y gestión de pagos integrados.',
+            title: t('moduleCashRegister') || 'Caja',
+            description: t('moduleCashRegisterDesc') || 'Control de ventas, cobros y gestión de pagos integrados.',
             color: 'emerald'
         },
         {
@@ -47,7 +47,7 @@ const ValueProposition = () => {
         {
             icon: 'medical_services',
             title: t('moduleVeterinary') || 'Veterinaria',
-            description: t('moduleVeterinaryDesc') || 'Historial clínico, vacunas, tratamientos y fichas médicas completas.',
+            description: t('moduleVeterinaryDesc') || 'Historial clínico, consultas y fichas médicas completas.',
             color: 'rose'
         },
         {

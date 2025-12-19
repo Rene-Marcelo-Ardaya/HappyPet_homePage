@@ -59,7 +59,7 @@ const Hero = () => {
                         <div className="flex flex-wrap items-center gap-6 mt-4 text-sm text-slate-500 dark:text-slate-400">
                             <div className="flex items-center gap-2">
                                 <span className="material-symbols-outlined text-emerald-500 text-[20px]">verified</span>
-                                <span>+500 clínicas</span>
+                                <span>+500 negocios</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="material-symbols-outlined text-sky-500 text-[20px]">cloud_done</span>
@@ -75,127 +75,52 @@ const Hero = () => {
                     {/* Hero Visual - Software Preview */}
                     <div className="w-full md:w-1/2 relative mt-8 md:mt-0">
                         <div className="relative">
-                            {/* Main Dashboard Preview */}
-                            <div className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-                                {/* Browser Header */}
-                                <div className="flex items-center gap-2 px-4 py-3 bg-slate-100 dark:bg-slate-700 border-b border-slate-200 dark:border-slate-600">
-                                    <div className="flex gap-1.5">
-                                        <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                                        <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                                        <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                                    </div>
-                                    <div className="flex-1 mx-4">
-                                        <div className="bg-white dark:bg-slate-600 rounded-md px-3 py-1 text-xs text-slate-500 dark:text-slate-300 flex items-center gap-2">
-                                            <span className="material-symbols-outlined text-[14px]">lock</span>
-                                            petsoft.pro/happypet
+                            {/* Main Dashboard Preview - Real Image */}
+                            <div className="relative">
+                                {/* Browser Frame */}
+                                <div className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+                                    {/* Browser Header */}
+                                    <div className="flex items-center gap-2 px-4 py-3 bg-slate-100 dark:bg-slate-700 border-b border-slate-200 dark:border-slate-600">
+                                        <div className="flex gap-1.5">
+                                            <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                                            <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                            <div className="w-3 h-3 rounded-full bg-green-400"></div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                {/* App Content */}
-                                <div className="flex">
-                                    {/* Sidebar Preview */}
-                                    <div className="w-16 bg-gradient-to-b from-sky-600 to-sky-700 p-2 space-y-3">
-                                        <div className="p-2 bg-white/20 rounded-lg">
-                                            <span className="material-symbols-outlined text-white text-[20px]">pets</span>
-                                        </div>
-                                        <div className="p-2 hover:bg-white/10 rounded-lg cursor-pointer">
-                                            <span className="material-symbols-outlined text-white/70 text-[20px]">group</span>
-                                        </div>
-                                        <div className="p-2 hover:bg-white/10 rounded-lg cursor-pointer">
-                                            <span className="material-symbols-outlined text-white/70 text-[20px]">point_of_sale</span>
-                                        </div>
-                                        <div className="p-2 hover:bg-white/10 rounded-lg cursor-pointer">
-                                            <span className="material-symbols-outlined text-white/70 text-[20px]">inventory_2</span>
-                                        </div>
-                                        <div className="p-2 hover:bg-white/10 rounded-lg cursor-pointer">
-                                            <span className="material-symbols-outlined text-white/70 text-[20px]">spa</span>
-                                        </div>
-                                        <div className="p-2 hover:bg-white/10 rounded-lg cursor-pointer">
-                                            <span className="material-symbols-outlined text-white/70 text-[20px]">medical_services</span>
+                                        <div className="flex-1 mx-4">
+                                            <div className="bg-white dark:bg-slate-600 rounded-md px-3 py-1 text-xs text-slate-500 dark:text-slate-300 flex items-center gap-2">
+                                                <span className="material-symbols-outlined text-[14px]">lock</span>
+                                                petsoft.pro/happypet
+                                            </div>
                                         </div>
                                     </div>
 
-                                    {/* Main Content */}
-                                    <div className="flex-1 p-4 bg-slate-50 dark:bg-slate-800/50">
-                                        {/* Welcome Header */}
-                                        <div className="mb-4">
-                                            <h4 className="text-lg font-bold text-slate-800 dark:text-white">¡Bienvenido a HappyPet!</h4>
-                                            <p className="text-xs text-slate-500 dark:text-slate-400">Panel de Control</p>
-                                        </div>
+                                    {/* Image Container with gradient fade */}
+                                    <div className="relative">
+                                        <img
+                                            src="/src/img/Image.jpeg"
+                                            alt="HappyPet Dashboard"
+                                            className="w-full h-auto min-h-[300px] object-cover"
+                                        />
 
-                                        {/* Stats Cards */}
-                                        <div className="grid grid-cols-3 gap-2 mb-4">
-                                            <div className="bg-white dark:bg-slate-700 rounded-lg p-3 shadow-sm">
-                                                <div className="flex items-center gap-2">
-                                                    <div className="p-1.5 bg-sky-100 dark:bg-sky-900/30 rounded-lg">
-                                                        <span className="material-symbols-outlined text-sky-600 text-[16px]">pets</span>
-                                                    </div>
-                                                    <div>
-                                                        <p className="text-lg font-bold text-slate-800 dark:text-white">128</p>
-                                                        <p className="text-[10px] text-slate-500">Pacientes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bg-white dark:bg-slate-700 rounded-lg p-3 shadow-sm">
-                                                <div className="flex items-center gap-2">
-                                                    <div className="p-1.5 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg">
-                                                        <span className="material-symbols-outlined text-emerald-600 text-[16px]">calendar_today</span>
-                                                    </div>
-                                                    <div>
-                                                        <p className="text-lg font-bold text-slate-800 dark:text-white">12</p>
-                                                        <p className="text-[10px] text-slate-500">Citas hoy</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bg-white dark:bg-slate-700 rounded-lg p-3 shadow-sm">
-                                                <div className="flex items-center gap-2">
-                                                    <div className="p-1.5 bg-amber-100 dark:bg-amber-900/30 rounded-lg">
-                                                        <span className="material-symbols-outlined text-amber-600 text-[16px]">payments</span>
-                                                    </div>
-                                                    <div>
-                                                        <p className="text-lg font-bold text-slate-800 dark:text-white">$2.4k</p>
-                                                        <p className="text-[10px] text-slate-500">Ventas</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        {/* Activity List */}
-                                        <div className="bg-white dark:bg-slate-700 rounded-lg p-3 shadow-sm">
-                                            <p className="text-xs font-semibold text-slate-700 dark:text-slate-200 mb-2">Próximas citas</p>
-                                            <div className="space-y-2">
-                                                <div className="flex items-center gap-2 text-xs">
-                                                    <div className="w-6 h-6 rounded-full bg-sky-100 flex items-center justify-center">🐕</div>
-                                                    <div className="flex-1">
-                                                        <p className="font-medium text-slate-700 dark:text-slate-200">Max - Vacunación</p>
-                                                        <p className="text-slate-400 text-[10px]">10:00 AM</p>
-                                                    </div>
-                                                    <span className="px-2 py-0.5 bg-green-100 text-green-700 rounded text-[10px] font-medium">Confirmada</span>
-                                                </div>
-                                                <div className="flex items-center gap-2 text-xs">
-                                                    <div className="w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center">🐈</div>
-                                                    <div className="flex-1">
-                                                        <p className="font-medium text-slate-700 dark:text-slate-200">Michi - Consulta</p>
-                                                        <p className="text-slate-400 text-[10px]">11:30 AM</p>
-                                                    </div>
-                                                    <span className="px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded text-[10px] font-medium">Pendiente</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {/* Gradient overlay for smooth blend */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-white/60 dark:from-slate-800/80 via-transparent to-transparent"></div>
+                                        <div className="absolute inset-0 bg-gradient-to-r from-white/20 dark:from-slate-800/30 via-transparent to-white/20 dark:to-slate-800/30"></div>
                                     </div>
                                 </div>
+
+                                {/* Decorative blur effect behind */}
+                                <div className="absolute -inset-4 bg-gradient-to-br from-sky-400/20 to-emerald-400/20 rounded-3xl blur-2xl -z-10"></div>
                             </div>
 
                             {/* Floating Elements */}
                             <div className="absolute -bottom-4 -left-4 bg-white dark:bg-slate-800 rounded-xl p-3 shadow-xl border border-slate-200 dark:border-slate-700 animate-bounce-slow">
                                 <div className="flex items-center gap-2">
-                                    <div className="p-2 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg">
-                                        <span className="material-symbols-outlined text-emerald-600">trending_up</span>
+                                    <div className="p-2 bg-violet-100 dark:bg-violet-900/30 rounded-lg">
+                                        <span className="material-symbols-outlined text-violet-600">calendar_month</span>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-semibold text-slate-700 dark:text-white">+23% ventas</p>
-                                        <p className="text-[10px] text-slate-400">este mes</p>
+                                        <p className="text-xs font-semibold text-slate-700 dark:text-white">45 Reservas</p>
+                                        <p className="text-[10px] text-slate-400">activas para hoy</p>
                                     </div>
                                 </div>
                             </div>

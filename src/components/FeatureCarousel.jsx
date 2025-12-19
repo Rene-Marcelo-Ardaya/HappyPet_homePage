@@ -9,7 +9,7 @@ const FeatureCarousel = () => {
         {
             icon: 'cloud_done',
             title: t('featureCloudTitle') || '100% en la Nube',
-            description: t('featureCloudDesc') || 'Accede a tu clínica desde cualquier lugar, en cualquier dispositivo. Sin instalaciones, sin complicaciones.',
+            description: t('featureCloudDesc') || 'Accede a tu negocio desde cualquier lugar, en cualquier dispositivo. Sin instalaciones, sin complicaciones.',
             color: 'sky',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop'
         },
@@ -72,8 +72,8 @@ const FeatureCarousel = () => {
                                 key={index}
                                 onClick={() => setActiveIndex(index)}
                                 className={`w-full text-left p-4 rounded-xl transition-all duration-300 ${activeIndex === index
-                                        ? 'bg-slate-100 dark:bg-slate-700 shadow-lg'
-                                        : 'hover:bg-slate-50 dark:hover:bg-slate-700/50'
+                                    ? 'bg-slate-100 dark:bg-slate-700 shadow-lg'
+                                    : 'hover:bg-slate-50 dark:hover:bg-slate-700/50'
                                     }`}
                             >
                                 <div className="flex items-start gap-4">
@@ -130,8 +130,8 @@ const FeatureCarousel = () => {
                                     key={index}
                                     onClick={() => setActiveIndex(index)}
                                     className={`h-2 rounded-full transition-all duration-300 ${activeIndex === index
-                                            ? `w-8 ${colorClasses[feature.color]}`
-                                            : 'w-2 bg-slate-300 dark:bg-slate-600'
+                                        ? `w-8 ${colorClasses[feature.color]}`
+                                        : 'w-2 bg-slate-300 dark:bg-slate-600'
                                         }`}
                                 />
                             ))}
@@ -143,7 +143,7 @@ const FeatureCarousel = () => {
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
                     <div className="text-center p-6 bg-slate-50 dark:bg-slate-700/50 rounded-2xl">
                         <p className="text-3xl md:text-4xl font-extrabold text-sky-600 dark:text-sky-400 mb-2">500+</p>
-                        <p className="text-sm text-slate-600 dark:text-slate-400">{t('statClinics') || 'Clínicas activas'}</p>
+                        <p className="text-sm text-slate-600 dark:text-slate-400">{t('statClinics') || 'Negocios activos'}</p>
                     </div>
                     <div className="text-center p-6 bg-slate-50 dark:bg-slate-700/50 rounded-2xl">
                         <p className="text-3xl md:text-4xl font-extrabold text-emerald-600 dark:text-emerald-400 mb-2">50k+</p>
