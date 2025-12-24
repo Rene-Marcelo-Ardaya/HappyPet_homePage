@@ -8,8 +8,7 @@ const PricingPage = () => {
     const languages = [
         { code: 'en', flag: '🇺🇸', name: 'English' },
         { code: 'es', flag: '🇪🇸', name: 'Español' },
-        { code: 'pt', flag: '🇧🇷', name: 'Português' },
-        { code: 'gn', flag: '🇵🇾', name: 'Guaraní' }
+        { code: 'pt', flag: '🇧🇷', name: 'Português' }
     ];
 
     const plans = [
@@ -363,8 +362,7 @@ const PricingPage = () => {
                         <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-4">
                             {language === 'es' ? 'Incluido en tu Suscripción' :
                                 language === 'pt' ? 'Incluído na sua Assinatura' :
-                                    language === 'gn' ? 'Oĩmava ne Suscripción-pe' :
-                                        'Included in your Subscription'}
+                                    'Included in your Subscription'}
                         </h2>
                     </div>
 

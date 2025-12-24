@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import ValueProposition from './components/ValueProposition';
 import FeatureCarousel from './components/FeatureCarousel';
+import BusinessTypes from './components/BusinessTypes';
 import FloatingActionButton from './components/FloatingActionButton';
 import ChatWidget from './components/ChatWidget';
 import PricingPage from './pages/PricingPage';
@@ -19,6 +20,7 @@ function HomePage() {
         <Hero />
         <ValueProposition />
         <FeatureCarousel />
+        <BusinessTypes />
         <div className="h-24 bg-transparent"></div> {/* Spacer for FAB */}
       </main>
 
