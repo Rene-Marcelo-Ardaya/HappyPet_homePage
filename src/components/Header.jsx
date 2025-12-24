@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
         { label: t('navDemo'), href: 'https://petsoft.pro/happypet/', external: true, highlight: true },
         { label: t('modulesTitle'), href: '#modules', external: false },
         { label: t('benefitsTitle'), href: '#benefits', external: false },
-        { label: t('navPricing'), href: '#pricing', external: false }
+        { label: t('navPricing'), href: '/pricing', external: false }
     ];
 
     return (
@@ -28,27 +29,42 @@ const Header = () => {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex items-center gap-3">
-                        <div className="text-primary flex items-center justify-center rounded-lg bg-primary/10 p-2">
-                            <span className="material-symbols-outlined text-[24px]">pets</span>
-                        </div>
+                        <img
+                            src="/src/img/logo.png"
+                            alt="HappyPet Logo"
+                            className="h-10 w-auto object-contain"
+                        />
                         <p className="hidden sm:block text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">Petsoft</p>
                     </div>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-8">
                         {navLinks.map((link, index) => (
-                            <a
-                                key={index}
-                                href={link.href}
-                                target={link.external ? '_blank' : undefined}
-                                rel={link.external ? 'noopener noreferrer' : undefined}
-                                className={`text-sm font-medium transition-all ${link.highlight
-                                    ? 'px-4 py-2 rounded-full bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 hover:bg-sky-100 dark:hover:bg-sky-900/50 hover:scale-105'
-                                    : 'text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary'
-                                    }`}
-                            >
-                                {link.label}
-                            </a>
+                            link.href.startsWith('/') ? (
+                                <Link
+                                    key={index}
+                                    to={link.href}
+                                    className={`text-sm font-medium transition-all ${link.highlight
+                                        ? 'px-4 py-2 rounded-full bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 hover:bg-sky-100 dark:hover:bg-sky-900/50 hover:scale-105'
+                                        : 'text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary'
+                                        }`}
+                                >
+                                    {link.label}
+                                </Link>
+                            ) : (
+                                <a
+                                    key={index}
+                                    href={link.href}
+                                    target={link.external ? '_blank' : undefined}
+                                    rel={link.external ? 'noopener noreferrer' : undefined}
+                                    className={`text-sm font-medium transition-all ${link.highlight
+                                        ? 'px-4 py-2 rounded-full bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 hover:bg-sky-100 dark:hover:bg-sky-900/50 hover:scale-105'
+                                        : 'text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary'
+                                        }`}
+                                >
+                                    {link.label}
+                                </a>
+                            )
                         ))}
                     </nav>
 
@@ -96,15 +112,25 @@ const Header = () => {
             <div className="md:hidden border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
                 <div className="flex justify-center gap-6 py-2">
                     {navLinks.map((link, index) => (
-                        <a
-                            key={index}
-                            href={link.href}
-                            target={link.external ? '_blank' : undefined}
-                            rel={link.external ? 'noopener noreferrer' : undefined}
-                            className="text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors"
-                        >
-                            {link.label}
-                        </a>
+                        link.href.startsWith('/') ? (
+                            <Link
+                                key={index}
+                                to={link.href}
+                                className="text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors"
+                            >
+                                {link.label}
+                            </Link>
+                        ) : (
+                            <a
+                                key={index}
+                                href={link.href}
+                                target={link.external ? '_blank' : undefined}
+                                rel={link.external ? 'noopener noreferrer' : undefined}
+                                className="text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors"
+                            >
+                                {link.label}
+                            </a>
+                        )
                     ))}
                 </div>
             </div>
